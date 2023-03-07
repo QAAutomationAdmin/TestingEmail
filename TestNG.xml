@@ -12,8 +12,7 @@
 
 			<class name="com.tests.SetAppointmentTest">
 				<methods>
-					<include name="createNonMedicalAppointmentTest"/>
-					<include name="scheduleAppointmentMedicalTest"/>
+					<include name="cancelNewAppointment"/>
 
 				</methods>
 			</class>
