@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="PLSI" parallel="none">
+
+	<listeners>
+		<listener class-name="com.listeners.ListenerTest"></listener>
+	</listeners>
+	<test name="VG" parallel = "none" thread-count = "1">
+		<classes>
+
+
+
+			<class name="com.tests.SetAppointmentTest">
+				<methods>
+					<include name="createNonMedicalAppointmentTest"/>
+					<include name="scheduleAppointmentMedicalTest"/>
+
+				</methods>
+			</class>
+
+
+
+
+
+
+
+		</classes>
+	</test>
+
+</suite>
